@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  bash:
+    build: .
+    image: zggff/osdev1
+    volumes:
+      - .:/src
+  make:
+    build: .
+    image: zggff/osdev1
+    volumes:
+      - .:/src
+    entrypoint: make 
